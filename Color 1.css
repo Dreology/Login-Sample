@@ -1,0 +1,204 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-image: url('./Background.png');
+    background-size: cover;
+    height: 200px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+
+  header {
+    display: flexbox;
+    position: relative;
+  }
+
+.start-for-free {
+    color: #505050;
+    text-align: left;
+    position: relative;
+    margin: 40px 0px 10px 60px;
+    font-size: 20px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.join-the-tribe {
+  height: 33px;
+  width: auto;
+  margin: 10px 0px 10px 50px; 
+}
+
+.already-a-memeber {
+  color: #505050;
+  text-align: left;
+  position: relative;
+  margin: 15px 0px 10px 60px;
+  font-size: 20px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.container {
+  display: inline-block;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 43px;
+}
+
+.name-sex {
+  display: flex;
+  justify-content: center;
+}
+
+.name-container {
+  width: 250px;
+}
+
+.name-text {
+  color: #505050;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 44px;
+  margin-bottom: 5px;
+}
+
+.name-box {
+  height: 40px;
+  margin-left: 40px;
+  width: 200px;
+  border-radius: 12px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid #505050;
+}
+
+.name-box:active {
+  border: 2;
+}
+
+.person-logo {
+  position: absolute;
+  margin-left: 212px;
+  margin-top: 7px;
+  width: auto;
+  height: 30px;
+}
+
+.sex-box {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+  width: 235px;
+}
+
+.sex-text {
+  position: absolute;
+  color: #505050;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 9px;
+}
+
+.male-rec input[type="radio"] {
+  display: none;
+}
+
+.male-icon {
+  border: 0px solid #1F1D1D;
+  background-color: #1F1D1D;
+  border-radius: 12px 0px 0px 12px;
+  margin-left: 200px;
+  margin-top: 25px;
+  padding: 8px;
+  height: 30px;
+  width: 33px;
+  padding-inline: 20px;
+}
+
+.female-rec input[type="radio"] {
+  display: none;
+}
+
+.female-rec label {
+  cursor: pointer;
+  display: inline;
+}
+
+.female-rec label img {
+  background-color: #1F1D1D;
+  margin-left: px;
+  margin-top: 25px;
+  padding: 8px;
+  padding-inline: 20px;
+  height: 30px;
+  width: 24px;
+}
+
+.other-rec input[type="radio"] {
+  display: none;
+}
+
+.other-rec {
+  border-radius: 0px 12px 12px 0px;
+  color: aliceblue;
+  border: 0px solid #1F1D1D;
+  background-color: #1F1D1D;
+  margin-left: px;
+  margin-top: 25px;
+  padding: 8px;
+  padding-inline: 20px;
+  height: 30px;
+  width: 40px;
+}
+
+.other-text {
+  color: white;
+  margin: 7px 0px 0px 0px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.email-birth-container {
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+  margin-left: 44px;
+}
+
+.email-container {
+  display: flex;
+  justify-content: flex-end;
+  border: 1px solid yellow;
+  width: 250px;
+}
+
+.email-text {
+  color: #505050;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.email-box {
+  height: 40px;
+  width: 200px;
+  border-radius: 12px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid #505050;
+}
