@@ -1,69 +1,85 @@
-body {
+html {
+  background-color: black;
+  background-image: url('./Background 2.png');
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
   font-family: 'Raleway', sans-serif;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    background-image: url('./Background.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
-  }
+a,
+body {
+  color: #FC5F40;
+  text-decoration: none;
+}
 
-  header {
-    display: flexbox;
-    position: relative;
-  }
+.canvas-background {
+  align-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
+  align-content: flex-start;
+  margin-left: 150px;
+  margin-top: 30px;
+  max-width: 700px;
+  max-height: 1000px;
+  min-height: auto;
+}
+
+header {
+  height: 160px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: flex-inline;
+  align-content: flex-start;
+  display: inline-flex;
+  justify-content: center;
+  justify-content: space-around;
+}
 
 .start-for-free {
-    color: #505050;
-    text-align: left;
-    position: relative;
-    margin: 40px 0px 10px 60px;
-    font-size: 20px;
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.join-the-tribe {
-  height: 33px;
-  width: auto;
-  margin: 10px 0px 10px 50px; 
-}
-
-.already-a-memeber {
   color: #505050;
-  text-align: left;
   position: relative;
-  margin: 15px 0px 10px 60px;
   font-size: 20px;
   width: auto;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+}
+
+.join-the-tribe {
+  height: 35px;
+  width: auto;
+}
+
+.already-a-memeber {
+  color: #505050;
+  position: relative;
+  font-size: 20px;
+  width: auto;
+  display: flex;
+  align-items: center;
 }
 
 .container {
+  margin-top: 20px;
+  flex-wrap: wrap;
   display: flex;
-  flex-direction: column;
-  margin-left: 50px;
-  margin-top: 43px;
+  max-width: 430px;
+  min-height: 300px;
 }
 
+/* name and sex container*/
 .name-sex {
+  width: 100%;
   display: flex;
-  height: 72px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .name-container {
-  width: 220px;
+  height: fit-content;
 }
 
 .name-text {
@@ -84,8 +100,11 @@ html, body {
   cursor: pointer;
 }
 
-.name-box:active {
-  border: 2;
+
+.name-box:focus {
+  box-shadow: 0px 0px 15px 0px #ff006b;
+  border: 2px solid #FF006B;
+  outline: #FF006B;
 }
 
 .person-logo {
@@ -96,8 +115,13 @@ html, body {
   height: 30px;
 }
 
+.sex-container {
+  display: inline;  
+}
+
 .sex-box {
   display: flex;
+  height: fit-content;
   gap: 3px;
 }
 
@@ -150,34 +174,38 @@ html, body {
   display: none;
 }
 
+
 .other-rec {
   border-radius: 0px 12px 12px 0px;
   color: #FF006B;
-  border: 0px solid #1F1D1D;
   background-color: #1F1D1D;
-  margin-left: px;
   margin-top: 5px;
-  padding: 8px;
-  padding-inline: 20px;
-  height: 30px;
-  width: 30px;
+  height: 46px;
+  text-align: center;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
-.other-text p {
+.other-text {
+  display: inline-flex;
+  text-align: center;
+  width: auto;
   color: #FF006B;
-  margin: 7px 0px 0px 0px;
   font-size: 16px;
   cursor: pointer;
+  margin-top: 15px;
+  margin-right: 5px;
 }
 
 .email-birth-container {
+  justify-content: space-between;
   display: flex;
-  margin-top: 25px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .email-container {
-  justify-content: left;
-  width: 220px;
+  display: inline-block;
 }
 
 .email-text {
@@ -198,12 +226,18 @@ html, body {
   cursor: pointer;
 }
 
+.email-box:focus {
+box-shadow: 0px 0px 15px 0px #ff006b;
+border: 2px solid #FF006B;
+outline: #FF006B;
+}
+
 .at-icon {
   position: absolute;
   margin-left: 173px;
-  margin-top: 7px;
+  margin-top: 10px;
   width: auto;
-  height: 30px;
+  height: 25px;
 }
 
 .birthday-text {
@@ -212,6 +246,12 @@ html, body {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 5px;
+}
+
+.birthday-box:focus {
+box-shadow: 0px 0px 15px 0px #ff006b;
+border: 2px solid #FF006B;
+outline: #FF006B;
 }
 
 .birthday-box {
@@ -240,7 +280,9 @@ html, body {
 
 .username-password-container {
   display: flex;
-  margin-top: 25PX;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .username-text {
@@ -261,6 +303,12 @@ html, body {
   cursor: pointer;
 }
 
+.username-box:focus {
+box-shadow: 0px 0px 15px 0px #ff006b;
+border: 2px solid #FF006B;
+outline: #FF006B;
+}
+
 .username-icon {
   position: absolute;
   margin-left: 170px;
@@ -275,7 +323,6 @@ html, body {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 5px;
-  margin-left: 13px;
 }
 
 .password-box {
@@ -285,120 +332,150 @@ html, body {
   color: white;
   background-color: transparent;
   border: 2px solid #505050;
-  margin-left: 13PX;
   cursor: pointer;
+}
+
+.password-box:focus {
+box-shadow: 0px 0px 15px 0px #ff006b;
+border: 2px solid #FF006B;
+outline: #FF006B;
 }
 
 .lock-icon {
   position: absolute;
-  margin-left: 185px;
+  margin-left: 175px;
   margin-top: 9px;
   width: auto;
   height: 30px;
 }
 
-.line-box {
-  display: flex;
-}
 
 .sign-up-links-container {
+  justify-content: flex-start;
+  flex-wrap: wrap;
   display: flex;
-  aborder: 2px solid red;
-  flex-direction: column;
-  margin-left: 50px;
+  max-width: 430px;
   margin-top: 10px;
 }
 
 .terms {
+  flex-shrink: 2;
   color: white;
   text-align: center;
   font-size: 10px;
-  margin-top: 14px;
-  margin-left: 120px;
-  display: inline-block;
+  margin-bottom: 10px;
 }
 
 .btn {
-    background: #ff006b;
-    border-radius: 12px;
-    width: 432px;
-    height: 50px;
-    border: 0px;
-    box-shadow: 0px 0px 15px 0px rgba(255, 0, 107, 1);
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-  }
+  background: #ff006b;
+  border-radius: 12px;
+  width: 100%;
+  height: 50px;
+  border: 0px;
+  box-shadow: 0px 0px 15px 0px #ff006b;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
 
-  .right-line {
-    margin-top: 30px;
-    border-style: solid;
-    border-color: #505050;
-    border-width: 3px 0 0 0;
-    width: 190px;
-  }
+.btn:hover {
+  background: rgb(255, 46, 133);
+  box-shadow: 0px 0px 15px 0px rgb(255, 46, 133);
+}
 
-  .or {
-    color: #505050;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 1000;
-    margin-top: 20px;
-    margin-left: 16px;
-  }
+.btn:active {
+  background: rgb(194, 0, 81);
+  box-shadow: 0px 0px 15px 0px rgb(194, 0, 81);
+}
 
-  .left-line {
-    margin-top: 30px;
-    border-style: solid;
-    border-color: #505050;
-    border-width: 3px 0 0 0;
-    width: 190px;
-    margin-left: 20px;
-  }
+.line-box {
+  display: inline-flex;
+  align-items: flex-start;
+  justify-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
 
-  .links-btn {
-    display: flex;
-  }
 
-  .google-btn {
-    height: 42px;
-    margin-top: 10px;
-    width: 200px;
-    border-radius: 12px;
-    color: #FF006B;
-    font-size: 17px;
-    text-align: center;
-    background-color: transparent;
-    border: 2px solid #FF006B;
-    cursor: pointer;
-  }
+.right-line {
+  flex-shrink: 1;
+  border-style: solid;
+  border-color: #505050;
+  border-width: 3px 0 0 0;
+  width: 45%;
+  margin-top: 10px;
+}
 
-  .google-icon {
-    position: absolute;
-    margin-left: 10px;
-    margin-top: 16px;
-    width: auto;
-    height: 30px;
-  }
+.or {
+  color: #505050;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 1000;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
-  .facebook-btn {
-    height: 42px;
-    margin-top: 10px;
-    width: 200px;
-    border-radius: 12px;
-    color: #FF006B;
-    font-size: 17px;
-    text-align: center;
-    background-color: transparent;
-    border: 2px solid #FF006B;
-    margin-left: 30px;
-    cursor: pointer;
-  }
+.left-line {
+  flex-shrink: 1;
+  border-style: solid;
+  border-color: #505050;
+  border-width: 3px 0 0 0;
+  width: 45%;
+  margin-top: 10px;
+}
 
-  .facebook-icon {
-    position: absolute;
-    margin-left: 35px;
-    margin-top: 16px;
-    width: auto;
-    height: 30px;
-  }
+
+.links-btn {
+  display: inline-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.google-btn {
+  height: 42px;
+  width: 200px;
+  border-radius: 12px;
+  color: #FF006B;
+  font-size: 20px;
+  text-align: center;
+  background-color: transparent;
+  border: 2px solid #FF006B;
+  cursor: pointer;
+}
+
+.google-btn:hover {
+box-shadow: 0px 0px 15px 0px #ff006b;
+}  
+
+.google-icon {
+  position: absolute;
+  margin-left: 6px;
+  margin-top: 6px;
+  height: 30px;
+}
+
+.facebook-btn {
+  height: 42px;
+  width: 200px;
+  border-radius: 12px;
+  color: #FF006B;
+  font-size: 20px;
+  text-align: center;
+  background-color: transparent;
+  border: 2px solid #FF006B;
+  cursor: pointer;
+}
+
+.facebook-btn:hover {
+box-shadow: 0px 0px 15px 0px #ff006b;
+}
+
+.facebook-icon {
+  position: absolute;
+  margin-left: 8px;
+  margin-top: 6px;
+  height: 30px;
+}
