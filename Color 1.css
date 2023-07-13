@@ -24,12 +24,11 @@ body {
   margin-left: 150px;
   margin-top: 30px;
   max-width: 700px;
-  max-height: 1000px;
   min-height: auto;
 }
 
 header {
-  height: 160px;
+  height: 170px;
   flex-direction: column;
   flex-wrap: wrap;
   display: flex-inline;
@@ -63,11 +62,11 @@ header {
 }
 
 .container {
-  margin-top: 20px;
+  margin-top: 40px;
   flex-wrap: wrap;
   display: flex;
   max-width: 430px;
-  min-height: 300px;
+  min-height: 270px;
 }
 
 /* name and sex container*/
@@ -336,9 +335,9 @@ outline: #FF006B;
 }
 
 .password-box:focus {
-box-shadow: 0px 0px 15px 0px #ff006b;
-border: 2px solid #FF006B;
-outline: #FF006B;
+  box-shadow: 0px 0px 15px 0px #ff006b;
+  border: 2px solid #FF006B;
+  outline: #FF006B;
 }
 
 .lock-icon {
@@ -358,6 +357,12 @@ outline: #FF006B;
   margin-top: 10px;
 }
 
+.conditions {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
 .terms {
   flex-shrink: 2;
   color: white;
@@ -370,7 +375,7 @@ outline: #FF006B;
   background: #ff006b;
   border-radius: 12px;
   width: 100%;
-  height: 50px;
+  height: 40px;
   border: 0px;
   box-shadow: 0px 0px 15px 0px #ff006b;
   color: white;
@@ -447,7 +452,7 @@ outline: #FF006B;
 }
 
 .google-btn:hover {
-box-shadow: 0px 0px 15px 0px #ff006b;
+  box-shadow: 0px 0px 15px 0px #ff006b;
 }  
 
 .google-icon {
@@ -470,7 +475,7 @@ box-shadow: 0px 0px 15px 0px #ff006b;
 }
 
 .facebook-btn:hover {
-box-shadow: 0px 0px 15px 0px #ff006b;
+  box-shadow: 0px 0px 15px 0px #ff006b;
 }
 
 .facebook-icon {
